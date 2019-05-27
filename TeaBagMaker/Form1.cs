@@ -31,14 +31,9 @@ namespace TeaBagMaker
             }
             this.txt = timelbl.Text;
 
-            first_sel();
             
         }
 
-        private void first_sel()
-        {
-           
-        }
         private void CB_SelectedIndexChanged(object sender, EventArgs e)
         {
             timelbl.Text = CB.Text;
@@ -54,12 +49,13 @@ namespace TeaBagMaker
             if (TimeCount == 0)
             {
                 
-                MessageBox.Show("티백을 건지세요!", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
                 this.timer1.Enabled = false;
                 this.timelbl.Enabled = true;
                 this.btn.Enabled = true;
                 this.CB.Enabled = true;
                 timelbl.Text = txt;
+                MessageBox.Show("티백을 건지세요!", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 CB.Focus();
                 
 
