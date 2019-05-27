@@ -53,10 +53,13 @@
             this.btn.TabIndex = 1;
             this.btn.Text = "담그기!";
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.Btn_Click);
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tag = "timer";
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // timelbl
             // 
